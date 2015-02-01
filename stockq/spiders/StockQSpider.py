@@ -23,15 +23,11 @@ def dfs(node):
 class StockQSpider(CrawlSpider):
     name = "stockq"
     allowed_domains = ["stockq.org"]
-    # start_urls = ["http://www.stockq.org/stock/history/2009/09/20090901_tc.php"]
-    start_urls = ["http://www.stockq.org/stock/history/",
-                  "http://www.stockq.org/stock/history/2007/",
-                  "http://www.stockq.org/stock/history/2008/",
-                  "http://www.stockq.org/stock/history/2009/",
-                  "http://www.stockq.org/stock/history/2010/",
-                  "http://www.stockq.org/stock/history/2011/",
-                  "http://www.stockq.org/stock/history/2012/",
-                  "http://www.stockq.org/stock/history/2013/"]
+    ## single root page
+    start_urls = ["http://www.stockq.org/stock/history/"]
+    ## multiple root pages
+    # start_urls = ["http://www.stockq.org/stock/history/",
+    #               "http://www.stockq.org/stock/history/2014/12/"]
     rules = (
         Rule(
             SgmlLinkExtractor(allow = [".*20../../20......_tc.php"]),

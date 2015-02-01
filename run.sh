@@ -8,5 +8,5 @@ do
     git commit -m "update to $month/$day"
     git push
     # 24 x 60 x 60 = 86400
-    sleep 86300
+    sleep 80000
 done

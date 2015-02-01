@@ -6,3 +6,5 @@
 <code>scrapy crawl stockq</code>
 #####單個頁面
 <code>scrapy crawl simple</code>
+## 帶新增功能
+1. 抓新增時會看現在日期往回抓，不要每次都全試試看所有連結

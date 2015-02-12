@@ -1,12 +1,6 @@
 #!/bin/bash
-while :
-do
-    scrapy crawl stockq
-    #month=`date +%m`
-    #day=`date +%d`
-    #git add .
-    #git commit -m "update to $month/$day"
-    #git push
-    # 24 x 60 x 60 = 86400
-    sleep 80000
-done
+cd /root/stockq
+scrapy crawl stockq
+git add .
+git commit -m "daily update"
+git push

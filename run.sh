@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /root/stockq
-scrapy crawl stockq
-git add .
-git commit -m "daily update"
-git push
+/usr/local/bin/scrapy crawl stockq
+/usr/bin/git add .
+/usr/bin/git commit -m "daily update"
+/usr/bin/git push
